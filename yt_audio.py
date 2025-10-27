@@ -25,7 +25,11 @@ def youtube_to_audio(url, output_format='mp3', output_folder='downloads'):
     if output_format == 'mp3':
         audio.export(output_path, format='mp3', bitrate='192k')
     elif output_format == 'wav':
-        audio.export(output_path, format='wav')
+        audio.export(
+        output_path,
+        format='wav',
+        parameters=['-acodec', 'pcm_s16le', '-ac', '1', '-ar', '11025']
+    )
     else:
         raise ValueError("Output format must be 'mp3' or 'wav'")
 
