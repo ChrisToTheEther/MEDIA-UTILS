@@ -1,0 +1,9 @@
+pillow
+argparse
+flask
+livereload
+
+# for ty_adio
+pydub==0.25.1
+pytube==15.0.0
+yt-dlp==2025.10.22
