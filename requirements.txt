@@ -1,7 +1,5 @@
-pillow
+pippillow
 argparse
-flask
-livereload
 
 # for ty_adio
 pydub==0.25.1
