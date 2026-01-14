@@ -1,4 +1,4 @@
-pippillow
+pillow
 argparse
 
 # for ty_adio
